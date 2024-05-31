@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity Web Player | HKUST GZ Alarm System URP</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+    nav {
+      background-color: #444;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background-color: #555;
+      transform: scale(1.1);
+    }
+    main {
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      flex: 1;
+
+    }
+    iframe {
+      position: absolute;
+      top: 2.5%;
+      left: 2.5%;
+      width: 95%;
+      height: 95%;
+
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+    }
+    iframe:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .text-container {
+      width: 90%;
+      margin-top: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+    @media (min-width: 1200px) {
+      main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .text-container {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to HKUST GZ Alarm System URP</h1>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <div class="content-container">
+      <h2>Unity Web Player</h2>
+      <div class="iframe-container">
+        <iframe src="index.html?id=12345"></iframe>
+      </div>
+    </div>
+    <div class="text-container">
+      <section>
+        <h2>Explore HKUST Guangzhou Virtual Campus</h2>
+        <p>Welcome to the virtual tour of the HKUST Guangzhou campus! 🏫 Here, you can explore the campus grounds, visit various buildings, and check the status of different facilities and devices. Use the following controls to navigate and interact:</p>
+        
+        <ul>
+          <li><strong>WASD Keys</strong> - Move forward, backward, left, and right 🕹️</li>
+          <li><strong>Right Mouse Button</strong> - Rotate the view 🖱️</li>
+          <li><strong>Left Mouse Button</strong> - Select buildings and devices 🏢</li>
+        </ul>
+
+        <p>Feel free to roam around and discover the campus in a whole new way. Here are some things you can do:</p>
+
+        <ul>
+          <li>Check the current status of different buildings 🏫</li>
+          <li>Monitor various devices and their conditions 📊</li>
+          <li>Interact with campus facilities and get detailed information 📋</li>
+        </ul>
+
+        <p>We hope you enjoy your virtual visit to HKUST Guangzhou! 🌟</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 HKUST GZ Alarm System URP. All rights reserved.</p>
+  </footer>
+</body>
+</html>
